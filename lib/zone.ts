@@ -1348,7 +1348,7 @@ const Zone: ZoneType = (function(global: any) {
       // is not ready yet, (such as core-js/es6.promise)
       // so we need to check here.
       if (NativePromise && typeof NativePromise.resolve === 'function') {
-        nativeMicroTaskQueuePromise = NativePromise.resolve(0);
+        // nativeMicroTaskQueuePromise = NativePromise.resolve(0);
       }
     },
   };
