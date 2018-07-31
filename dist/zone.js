@@ -628,7 +628,7 @@ var Zone$1 = (function (global) {
             // is not ready yet, (such as core-js/es6.promise)
             // so we need to check here.
             if (NativePromise && typeof NativePromise.resolve === FUNCTION) {
-                nativeMicroTaskQueuePromise = NativePromise.resolve(0);
+                // nativeMicroTaskQueuePromise = NativePromise.resolve(0);
             }
         },
     };
